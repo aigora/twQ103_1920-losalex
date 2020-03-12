@@ -1,11 +1,14 @@
-# Título del trabajo
+# COMANDO BANNER SISTEMAS UNIX 
 
-Descripción breve del proyecto a realizar (2-3 frases).
+Los  sistemas  UNIX  incorporan  un comando  de  consola  llamado  banner  que  al pedir un  texto, luego muestra  el mismo  en  tamaño  grande, pero poniendo cada  letra  en  una  matriz  de  6x6  con los símbolos requeridos.
 
-## Integrantes del equipo
+## INTEGRANTES 
 
-Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
+María Alexandra Mancilla Ávila - alexandramavila
+Alejandro Martín herreros
 
-## Objetivos del trabajo
+## OBJETIVOS
 
-Lista de los objetivos que se persiguen con el trabajo propuesto.
+- Solicitar un texto al usuario y devolverle dicho texto en formato BANNER con los símbolos escogidos en una matriz de 6x6 por letra. 
+
+
