@@ -5,7 +5,8 @@ Los  sistemas  UNIX  incorporan  un comando  de  consola  llamado  banner  que  
 ## INTEGRANTES 
 
 María Alexandra Mancilla Ávila - alexandramavila
-Alejandro Martín herreros
+
+Alejandro Martín Herreros - alejandromartinherreros
 
 ## OBJETIVOS
 
