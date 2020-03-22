@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main () {
+int opcion, opcion2, i, j,k;
+	do
+	{
+			printf("\nSeleccione una opcion: \n");
+		printf("1-Elegir tipografia\n");
+		printf("2-Mostrar banner\n");
+		printf("3-Salir del programa\n");
+	printf("Opcion: ");
+		
+		scanf("%d", &opcion);
+		while (getchar() != '\n');
+		printf("\n");
+
+		switch (opcion)
+		{
+		case 1:
+			printf("\n\tSeleccione una opcion de tipografia: \n");
+			printf("\t\t1-Hashtag\n");
+			printf("\t\t2-Ampersand\n");
+			printf("\t\t3-Dolares\n");
+			printf("\t\tOpcion: ");
+			scanf("%d", &opcion2);
+			while (getchar() != '\n');
+			printf("\n");
+
+			if (opcion2 == 1) tipograf = '#';
+			else if (opcion2 == 2) tipograf = '&';
+			else if (opcion2 == 3) tipograf = '$';
+			else printf("\tValor incorrecto, se mantiene la tipografía existente\n");
+      case 2:
+      printf("\tIntroduzca el texto:"); 
+			gets(texto);   
+			
+			if (strlen(texto) >= 25)
+			{
+				printf("\n\tEl texto debe ser menor de 25 caracteres.\n");
+			}
+      break;
+      case 3:
+      break;
+      default:
+			printf("Opcion incorrecta\n");
+      
