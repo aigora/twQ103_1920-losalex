@@ -72,13 +72,13 @@ int main()
 
 			else
 			{
-				for (i = 0; i < strlen(texto); i++)  //Este es un bucle donde voy a tratar cada letra del texto
-				{                                    //Strlen() me mide la longitud del texto
+				for (i = 0; i < strlen(texto); i++)  //Este es un bucle donde se trata cada letra del texto
+				{                                    
 
 
 
 					if (texto[i] == ' ')
-					{    // si la letra es un espacio, relleno las 6 lineas de la matriz con "      ".
+					{    // si la letra es un espacio, se rellena las 6 lineas de la matriz con "      ".
 						cadenadebanners[i].letra = ' ';
 						for (j = 0; j < 6; j++)
 							strcpy(cadenadebanners[i].matriz[j], "      ");
@@ -178,7 +178,7 @@ int main()
 			}
 			if(cont>1){
 				FILE *pg;
-				pg=fopen("Ficheroresultante.txt", "a");
+				pg=fopen("Ficheroresultante.txt", "a"); // Utilizamos el modo "a" para que los datos nuevos se añadan al final del fichero.Si el fichero no existe, se crea
 				fprintf(pg,"\n\n");
 
 				for (p = 0; p < 6; p++){
@@ -201,7 +201,7 @@ int main()
 					for (o = 0; o < strlen(texto); o++){
 					fprintf(pg,"%s ", cadenadebanners[o].matriz[p]);
 					}
-				fprintf(pg, "\n"); // Para que cambie de línea al escribir la primera fila de todas las matrices.
+				fprintf(pg, "\n"); 
 				}
 				cont++;
 
@@ -235,9 +235,9 @@ int main()
 							strcpy(cadenadebanners[i].matriz[j], "      ");
 					}
 
-					else if (texto[i] >= 'A' && texto[i] <= 'Z')     //Me aseguro de que la letra que trato es una mayuscula entre la A y la Z
+					else if (texto[i] >= 'A' && texto[i] <= 'Z')
 					{
-						cadenadebanners[i].letra = texto[i];   // Le doy una posición en el banner a cada letra del texto 
+						cadenadebanners[i].letra = texto[i];   
 						
 						fentrada = fopen("Hashtag.txt", "r");
 						if (fentrada == NULL){ 
